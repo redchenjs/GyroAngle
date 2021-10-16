@@ -54,13 +54,13 @@ namespace GyroAngle
                 polygon.PopObjectSpace(gl);
             }
 
-            this.label_Pitch.Text = "Pitch : " + M_Pitch.ToString();
-            this.label_Yaw.Text   = "Yaw   : " + M_Yaw.ToString();
-            this.label_Roll.Text  = "Roll  : " + M_Roll.ToString();
+            this.label_Pitch.Text = "Pitch : " + M_Pitch.ToString("F2");
+            this.label_Yaw.Text   = "Yaw   : " + M_Yaw.ToString("F2");
+            this.label_Roll.Text  = "Roll  : " + M_Roll.ToString("F2");
 
-            this.label_HX.Text = "HX : " + M_HX.ToString();
-            this.label_HY.Text = "HY : " + M_HY.ToString();
-            this.label_HZ.Text = "HZ : " + M_HZ.ToString();
+            this.label_HX.Text = "HX : " + M_HX.ToString("F2");
+            this.label_HY.Text = "HY : " + M_HY.ToString("F2");
+            this.label_HZ.Text = "HZ : " + M_HZ.ToString("F2");
 
             gl.Flush();
         }
